@@ -1,0 +1,43 @@
+{
+  "name": "sanic",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tauri dev",
+    "dev:web": "svelte-kit dev --port 5000",
+    "tauri": "tauri",
+    "build": "tauri build",
+    "build:web": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "lint": "prettier --check *.js *.json src",
+    "format": "prettier --write *.js *.json src"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.13",
+    "@sveltejs/kit": "^1.0.0-next.113",
+    "prettier": "~2.3.1",
+    "prettier-plugin-svelte": "^2.3.0",
+    "sass": "^1.34.1",
+    "svelte": "^3.38.2",
+    "svelte-preprocess": "^4.7.3",
+    "tslib": "^2.2.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.3.6"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "htmlWhitespaceSensitivity": "strict",
+    "svelteSortOrder": "options-scripts-markup-styles",
+    "svelteStrictMode": false,
+    "svelteAllowShorthand": true,
+    "svelteBracketNewLine": false,
+    "svelteIndentScriptAndStyle": true
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.0.0-beta.1",
+    "@tauri-apps/cli": "^1.0.0-beta.2"
+  }
+}
